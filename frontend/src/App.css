@@ -1,0 +1,85 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+/* Remove Vite's default #root constraints */
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  text-align: left;
+}
+
+/* Parent container fills the entire viewport */
+.home-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Logo styling */
+.logo-img {
+  width: 4rem;    /* w-16 */
+  position: absolute;
+  top: 1.25rem;   /* top-5 */
+  left: 1.25rem;  /* left-5 */
+  z-index: 10;
+}
+
+/* Wrapper ensures full coverage */
+.hero-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+/* Background image MUST fill screen */
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* fills the screen */
+  object-position: center;
+  display: block;         /* removes small gaps */
+}
