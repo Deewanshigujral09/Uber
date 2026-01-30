@@ -8,6 +8,7 @@ module.exports.getAddressCoordinate = async (address) => {
   if (!apiKey) throw new Error("Missing GOOGLE_MAPS_API environment variable");
 
   const url = "https://maps.googleapis.com/maps/api/geocode/json";
+  // this is temp[ api key]
 
   try {
     const response = await axios.get(url, {
